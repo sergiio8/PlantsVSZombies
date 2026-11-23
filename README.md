@@ -26,16 +26,17 @@ This is an academic project developed by
   `String.formatted(...)`, introduced in Java 15.
 - A POSIX-compatible shell for the commands below.
 
-The repository currently contains the original project as
-`Entrega3SergioyDaniel.zip`; it does not include Maven or Gradle build
-metadata.
+The original coursework submission is preserved as
+[`coursework/plants-vs-zombies/archive/Entrega3SergioyDaniel.zip`](coursework/plants-vs-zombies/archive/Entrega3SergioyDaniel.zip).
+It does not include Maven or Gradle build metadata.
 
 ## Build and run
 
-Extract the project archive and enter its root directory:
+From the repository root, extract the archive and enter the extracted project
+directory:
 
 ```sh
-unzip Entrega3SergioyDaniel.zip
+unzip coursework/plants-vs-zombies/archive/Entrega3SergioyDaniel.zip
 cd Entrega3SergioyDaniel-5
 ```
 
@@ -93,16 +94,20 @@ The source is organised under the `tp1` package:
 ## Testing
 
 The archive includes JUnit 5 test sources under `src/tp1/p3/pruebas`, but no
-build file or JUnit dependency is bundled. To run those tests, provide JUnit
-5 dependencies and configure the test class path separately. The production
-compile command above intentionally excludes the JUnit test sources.
+build file or JUnit dependency is bundled. The tests also expect text fixtures
+under `test/p3/` (including `00-easy_25-input.txt`,
+`00-easy_25-expected.txt`, and `00-easy_25-output.txt`) that are not present in
+the archive. Consequently, the tests cannot run from this submission as
+provided. Running them requires both the missing fixture set and JUnit 5
+dependencies, configured on the test class path. The production compile
+command above intentionally excludes the JUnit test sources.
 
 ## Project status
 
-This repository preserves the original educational submission. It is a
-working terminal-game prototype rather than a packaged desktop or web game;
-the ZIP layout and manual Java compilation are part of the current project
-format.
+This repository preserves the original educational submission under
+`coursework/plants-vs-zombies/archive/`. The project is a working terminal-game
+prototype rather than a packaged desktop or web game; the ZIP layout and
+manual Java compilation are part of the current project format.
 
 ## License
 
